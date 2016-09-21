@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BestOfBrands.Interfaces
 {
-    interface IProductCategory
+    public interface IProductCategory
     {
         // todo define IProductCategory interface
     }

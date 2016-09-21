@@ -1,8 +1,8 @@
 ﻿namespace BestOfBrands.Enums
 {
-    public class ECategory
+    public class EGender
     {
-        enum Category
+        enum Gender
         {
             male,
             female,

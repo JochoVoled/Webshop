@@ -1,15 +1,17 @@
-﻿namespace BestOfBrands.Interfaces
+﻿using BestOfBrands.Enums;
+
+namespace BestOfBrands.Interfaces
 {
     public interface IProduct
     {
-        int inStock { get; set; }
-        string name { get; set; }
-        int price { get; set; }
-        //ProductCategory category;
-        //TargetConsumer;
-        bool isChild { get; set; }
-        string productNumber { get; set; }
-        string size { get; set; }
-        string description { get; set; }
+        int StockAmount { get; set; }
+        string Name { get; set; }
+        decimal Price { get; set; }
+        IProductCategory Category { get; set; }
+        EGender TargetConsumer { get; set; }
+        bool IsChild { get; set; }
+        string ProductNumber { get; set; }
+        string Size { get; set; }
+        string Description { get; set; }
     }
 }

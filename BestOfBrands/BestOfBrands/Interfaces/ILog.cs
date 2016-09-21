@@ -2,6 +2,6 @@
 {
     interface ILog
     {
-        bool Add(string logEntry);
+        void Add(string logEntry);
     }
 }

@@ -1,12 +1,14 @@
-﻿namespace BestOfBrands.Interfaces
+﻿using System.Collections.Generic;
+
+namespace BestOfBrands.Interfaces
 {
     interface IAdmin
     {
         void EditOrder();
         void AddProduct();
         void RemoveProduct();
-        void ViewInventory();
+        List<IProduct> ViewInventory();
         void SetPrice(IProduct product);
-        void GetProfit();
+        decimal GetProfit();
     }
 }

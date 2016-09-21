@@ -2,13 +2,12 @@
 {
     interface ICart
     {
-
         System.Collections.Generic.List<IProduct> productList { get; set; }
-        void CountPrice();
+        decimal CountPrice();
         void Remove(IProduct product);
         void Add(IProduct product);
-        bool CheckOut();
-        bool PlaceOrder();
-        bool Clear();
+        void CheckOut();
+        void PlaceOrder();
+        void Clear();
     }
 }

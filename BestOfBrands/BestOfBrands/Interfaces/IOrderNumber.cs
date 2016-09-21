@@ -1,6 +1,6 @@
 ﻿namespace BestOfBrands.Interfaces
 {
-    public interface IOrderNumber
+    interface IOrderNumber
     {
         int number { get; set; }
         int NextNumber();
