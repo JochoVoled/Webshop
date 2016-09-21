@@ -11,6 +11,7 @@ _ReSharper.*/
 *.exe
 *.o
 *.so
+*.sou
 
 # Packages #
 ############
