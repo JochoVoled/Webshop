@@ -1,0 +1,52 @@
+Person
+  username
+  password
+  name
+  email
+  adress
+  phoneNumber
+  LogIn()
+  LogOut()
+Admin
+  EditOrder()
+  AddProduct()
+  RemoveProduct()
+  ViewInventory()
+  SetPrice(Product)
+  GetProfit()
+Customer
+  int ID
+  EditOrder() // only its own orders
+Product
+  int inStock
+  string name
+  int price
+  ProductCategory category
+  TargetConsumer
+  bool isChild
+  string productNumber
+  string size
+  string description
+Log
+  Add(string)
+Cart
+  List<Product>
+  CountPrice()
+  Remove(Product)
+  Add(Product)
+  CheckOut()
+  PlaceOrder()
+  Clear()
+Order
+  List<Product>
+  int customerID
+OrderNumber
+  int number
+  NextNumber()
+ProductNumber
+  int number
+  NextNumber()
+ProductCategory // class, undefined
+enum TargetCustomer (male, female, unisex)
+
+NEXT: Define site pages
