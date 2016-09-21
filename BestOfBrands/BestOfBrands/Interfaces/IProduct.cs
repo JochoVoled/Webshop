@@ -1,15 +1,15 @@
 ﻿namespace BestOfBrands.Interfaces
 {
-    public class IProduct
+    public interface IProduct
     {
-        int inStock;
-        string name;
-        int price;
+        int inStock { get; set; }
+        string name { get; set; }
+        int price { get; set; }
         //ProductCategory category;
         //TargetConsumer;
-        bool isChild;
-        string productNumber;
-        string size;
-        string description;
+        bool isChild { get; set; }
+        string productNumber { get; set; }
+        string size { get; set; }
+        string description { get; set; }
     }
 }
