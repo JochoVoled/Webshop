@@ -128,6 +128,10 @@
     </Content>
     <Content Include="Pages\Master.cshtml" />
     <Content Include="Default.cshtml" />
+    <Content Include="Pages\Searchpage.cshtml" />
+    <Content Include="Pages\Default.cshtml" />
+    <Content Include="Pages\Cloths.cshtml" />
+    <Content Include="Pages\Admin\Adminpage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -138,6 +142,8 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\bootstrap.min.js" />
     <Content Include="Styles\TempStyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
