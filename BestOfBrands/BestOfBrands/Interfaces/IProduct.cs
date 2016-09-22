@@ -4,6 +4,7 @@ namespace BestOfBrands.Interfaces
 {
     public interface IProduct
     {
+        int ProductID { get; set; }
         int StockAmount { get; set; }
         string Name { get; set; }
         decimal PriceSell { get; set; }

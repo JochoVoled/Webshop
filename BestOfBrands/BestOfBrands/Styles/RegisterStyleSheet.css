@@ -1,0 +1,49 @@
+.header {
+    font-family: calibri;
+    font-size: 32px;
+    color: #ffc266;
+    margin: 1% 20%
+}
+
+.inputUser {
+    border: 2px solid chocolate;
+    border-radius: 8px;
+    padding: 3px;
+    width: 50%;
+    
+}
+
+.inputUser p {
+    font-size: 24px;
+    font-family: calibri;
+    
+}
+
+ inputUser, label {
+    display: block;
+    
+}
+
+.SubmitButton {
+     background-color: chocolate;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    float: left;
+    margin: 1% 39%
+}
+.SubmitButton:hover {
+    background-color: #ffc266;
+    color: white;
+}
+
+p.round {
+    
+}

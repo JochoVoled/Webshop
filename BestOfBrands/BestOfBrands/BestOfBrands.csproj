@@ -130,9 +130,9 @@
     <Content Include="Default.cshtml" />
     <Content Include="Pages\Searchpage.cshtml" />
     <Content Include="Pages\Default.cshtml" />
-    <Content Include="Pages\Cloths.cshtml" />
+    <Content Include="Pages\Clothes.cshtml" />
     <Content Include="Pages\Admin\Adminpage.cshtml" />
-    <Content Include="Pages\AddProduct.cshtml" />
+    <Content Include="Pages\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -141,14 +141,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="scripts\ai.0.22.19-build00125.js" />
-    <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="Scripts\ai.0.22.19-build00125.js" />
+    <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="Styles\bootstrap.min.css" />
     <Content Include="Styles\bootstrap.min.js" />
+    <Content Include="Styles\RegisterStyleSheet.css" />
     <Content Include="Styles\TempStyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseRepository\DatabaseRepository.cs" />
     <Compile Include="DatabaseRepository\tmpDatabaseRepoFile.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Enums\EGender.cs" />
@@ -156,6 +158,7 @@
     <Compile Include="Interfaces\ICart.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\ILog.cs" />
+    <Compile Include="Interfaces\IDatabaseRepository.cs" />
     <Compile Include="Interfaces\IOrder.cs" />
     <Compile Include="Interfaces\IOrderNumber.cs" />
     <Compile Include="Interfaces\IPerson.cs" />
