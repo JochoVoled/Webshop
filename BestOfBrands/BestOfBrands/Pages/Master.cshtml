@@ -21,6 +21,12 @@
         }
 
         /* Custom container */
+
+        .footer{
+            margin: 80px auto;
+
+        }
+
         .container {
             margin: 0 auto;
             max-width: 1000px;
@@ -71,6 +77,9 @@
             text-align: center;
             margin: auto;
         }
+        .btn:hover{
+            background-color: #ff9966;
+        }
 
         .navbar .nav {
             margin: 0;
@@ -83,7 +92,10 @@
                 width: 1%;
                 float: none;
             }
-
+                .navbar .nav li a:hover{
+                    background-color: #ff9966;
+                } 
+               
                 .navbar .nav li a {
                     font-style: italic;
                     font-weight: bold;
@@ -133,11 +145,11 @@
                         </form>
                         <ul class="nav">
                             <li class="active"><a href="Default.cshtml">Home</a></li>
-                            <li><a href="#">Clothes</a></li>
-                            <li><a href="Searchpage.cshtml">Search</a></li>
-                            <li><a href="Adminpage/Adminpage.cshtml">Login</a></li>
+                            <li><a href="~/Pages/Clothes.cshtml">Clothes</a></li>
+                            <li><a href="~/Pages/Searchpage.cshtml">Search</a></li>
+                            <li><a href="~/Pages/Admin/Adminpage.cshtml">Login</a></li>
                             <li><a href="#">Checkout</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="~/Pages/Register.cshtml">Register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -147,14 +159,12 @@
         @RenderBody()
 
 
-        <div class="row-fluid">
-            <div class="span4">
-
-
-            </div>
-        </div>
+       
         <div class="footer">
-            <p>Contact info...</p>
+            <p>Contact info</p>
+            <p>something something</p>
+            <p>something something</p>
+            <p>something something</p>
             <p>&copy; Johannes kortbyxor AB</p>
         </div>
 
