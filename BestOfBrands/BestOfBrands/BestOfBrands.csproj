@@ -143,8 +143,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseRepository\tmpDatabaseRepoFile.cs" />
+    <Compile Include="Entities\Product.cs" />
     <Compile Include="Enums\EGender.cs" />
-    <Compile Include="Entities\TempEntities.cs" />
     <Compile Include="Interfaces\IAdmin.cs" />
     <Compile Include="Interfaces\ICart.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
@@ -157,6 +157,7 @@
     <Compile Include="Interfaces\IProductNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

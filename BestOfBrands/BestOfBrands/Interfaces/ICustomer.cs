@@ -3,6 +3,6 @@
     interface ICustomer
     {
         int ID { get; set; }
-        void EditOrder(); // only its own orders
+        bool EditOrder(); // only its own orders
     }
 }

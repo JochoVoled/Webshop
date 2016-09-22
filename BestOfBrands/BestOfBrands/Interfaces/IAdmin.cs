@@ -4,11 +4,11 @@ namespace BestOfBrands.Interfaces
 {
     interface IAdmin
     {
-        void EditOrder();
-        void AddProduct();
-        void RemoveProduct();
+        bool EditOrder();
+        bool AddProduct();
+        bool RemoveProduct();
         List<IProduct> ViewInventory();
-        void SetPrice(IProduct product);
+        bool SetPrice(IProduct product);
         decimal GetProfit();
     }
 }
