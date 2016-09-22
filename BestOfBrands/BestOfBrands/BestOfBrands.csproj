@@ -150,10 +150,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseRepository\tmpDatabaseRepoFile.cs" />
+    <Compile Include="Entities\Counter.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Person.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Enums\EGender.cs" />
+    <Compile Include="Entities\TempEntities.cs" />
     <Compile Include="Interfaces\IAdmin.cs" />
     <Compile Include="Interfaces\ICart.cs" />
+    <Compile Include="Interfaces\ICounter.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\ILog.cs" />
     <Compile Include="Interfaces\IOrder.cs" />
@@ -197,7 +202,7 @@
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
