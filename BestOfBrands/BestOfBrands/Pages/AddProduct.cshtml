@@ -1,0 +1,107 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+
+    @{
+        Layout = "Master.cshtml";
+
+        if (IsPost)
+        {
+            var productId = Request.Form["productId"];
+            var size = Request.Form["size"];
+            var category = Request.Form["category"];
+            var name = Request.Form["name"];
+            var description = Request.Form["description"];
+            var priceSell = Request.Form["priceSell"];
+            var priceBuy = Request.Form["priceBuy"];
+            var quantity = Request.Form["quantity"];
+            var isChild = Request.Form["isChild"];
+            var gender = Request.Form["gender"];
+
+
+        }
+    }
+
+    <h1>Add Product</h1>
+
+    <div>
+
+        <form name="AddProduct" method="post" action="AddProduct">
+
+            <table width="400">
+
+                <tr>
+                    <td><label for="productId">Product Id *</label></td>
+                    <td><input type="text" name="productId" size="10"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="size">Size *</label></td>
+                    <td><input type="text" name="size" size="10"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="category">Category *</label></td>
+                    <td><input type="text" name="category" size="25"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="name">Name *</label></td>
+                    <td><input type="text" name="name" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="description">Description *</label></td>
+                    <td><textarea id="description" rows="6" cols="30"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="priceSell">Sale Price *</label></td>
+                    <td><input type="text" name="priceSell" size="10"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="priceBuy">Buy Price *</label></td>
+                    <td><input type="text" name="priceBuy" size="10"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="quantity">Quantity *</label></td>
+                    <td><input type="text" name="quantity" size="10"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="isChild">For Children</label></td>
+                    <td><input type="checkbox" name="isChild"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male<br />
+                        <input type="radio" name="gender" value="female">Female<br />
+                        <input type="radio" name="gender" value="unisex" checked="checked">Unisex
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>(*) Mandatory fields.</td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Lägg till produkt"></td>
+                </tr>
+
+            </table>
+
+        </form>
+    </div>
+
+</body>
+</html>
