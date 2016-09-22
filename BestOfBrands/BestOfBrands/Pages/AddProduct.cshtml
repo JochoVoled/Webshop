@@ -1,4 +1,5 @@
 ﻿
+@using BestOfBrands.Entities;
 <!DOCTYPE html>
 
 <html>
@@ -9,7 +10,6 @@
 <body>
 
     @{
-        Layout = "Master.cshtml";
 
         if (IsPost)
         {
@@ -24,6 +24,43 @@
             var isChild = Request.Form["isChild"];
             var gender = Request.Form["gender"];
 
+            //bool parseSuccess;
+            //decimal priceSellParsed, priceBuyParsed;
+            //int quantityParsed;
+            bool child;
+
+            //parseSuccess = decimal.TryParse(priceSell, out priceSellParsed);
+            //parseSuccess = decimal.TryParse(priceBuy, out priceBuyParsed);
+            //parseSuccess = int.TryParse(quantity, out quantityParsed);
+         
+            
+            if (isChild != "" && isChild != " ")
+            {
+                child = true;
+            }
+            else
+            {
+                child = false;
+            }           
+            
+
+
+            var product = new Product
+            {
+                ProductNumber = productId,
+                Size = size,
+                Category = category,
+                Name = name,
+                Description = description,
+                PriceSell = Convert.ToDecimal(priceSell),
+                PriceBuy = Convert.ToDecimal(priceBuy),
+                StockAmount = Convert.ToInt32(quantity),
+                IsChild = child,  //Convert.ToBoolean(isChild),
+                Gender = Convert.ToString(gender)
+            };
+
+
+            //todo Spara till fil (XML)
 
         }
     }
@@ -32,7 +69,7 @@
 
     <div>
 
-        <form name="AddProduct" method="post" action="AddProduct">
+        <form name="AddProduct" method="post" action="AddProduct.cshtml">
 
             <table width="400">
 
@@ -58,7 +95,7 @@
 
                 <tr>
                     <td><label for="description">Description *</label></td>
-                    <td><textarea id="description" rows="6" cols="30"></textarea></td>
+                    <td><textarea id="description" rows="6" cols="30" name="description"></textarea></td>
                 </tr>
 
                 <tr>

@@ -6,9 +6,10 @@ namespace BestOfBrands.Interfaces
     {
         int StockAmount { get; set; }
         string Name { get; set; }
-        decimal Price { get; set; }
-        IProductCategory Category { get; set; }
-        EGender TargetConsumer { get; set; }
+        decimal PriceSell { get; set; }
+        decimal PriceBuy { get; set; }
+        string Category { get; set; }
+        string Gender { get; set; }
         bool IsChild { get; set; }
         string ProductNumber { get; set; }
         string Size { get; set; }
