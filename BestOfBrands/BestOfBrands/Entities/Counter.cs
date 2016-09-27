@@ -44,4 +44,8 @@ namespace BestOfBrands.Entities
             return toReturn;
         }
     }
+
+    public interface ICounter
+    {
+    }
 }

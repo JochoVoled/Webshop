@@ -17,6 +17,7 @@ namespace BestOfBrands.Entities
         public decimal PriceBuy { get; set; }
         public string ProductNumber { get; set; }
         public string Size { get; set; }
+        public int ProductID { get; set; }
         public int StockAmount { get; set; }
         public string Gender { get; set; }
 
