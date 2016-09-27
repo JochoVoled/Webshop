@@ -32,17 +32,8 @@
             //parseSuccess = decimal.TryParse(priceSell, out priceSellParsed);
             //parseSuccess = decimal.TryParse(priceBuy, out priceBuyParsed);
             //parseSuccess = int.TryParse(quantity, out quantityParsed);
-         
-            
-            if (isChild != "" && isChild != " ")
-            {
-                child = true;
-            }
-            else
-            {
-                child = false;
-            }           
-            
+                     
+            if (isChild != "" && isChild != " ") ? child = true : child = false;                    
 
 
             var product = new Product
