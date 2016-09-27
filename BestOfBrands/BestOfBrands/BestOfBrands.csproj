@@ -150,7 +150,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseRepository\ProductDatabaseRepository.cs" />
+    <Compile Include="DatabaseRepository\DatabaseRepository.cs" />
+    <Compile Include="DatabaseRepository\MasterDatabaseRepository.cs" />
     <Compile Include="DatabaseRepository\tmpDatabaseRepoFile.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Enums\EGender.cs" />

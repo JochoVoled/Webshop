@@ -10,6 +10,5 @@ namespace BestOfBrands.Interfaces
     {
         void Save(T item);
         List<T> GetAll();
-        int NextItemID();
     }
 }
