@@ -1,6 +1,6 @@
 ﻿namespace BestOfBrands.Interfaces
 {
-    interface ILog
+    public interface ILog
     {
         void Add(string logEntry);
     }

@@ -1,4 +1,5 @@
 ﻿@using BestOfBrands.Entities; 
+@using BestOfBrands.DatabaseRepository;
 
 <!DOCTYPE html>
 
@@ -35,7 +36,7 @@
 
             child = (isChild.Trim() != "") ? true : false;
 
-
+  
             var product = new Product()  //IProduct
             {
                 ProductNumber = productId,
@@ -52,7 +53,15 @@
 
 
             //todo Spara till fil (XML)
-
+            DatabaseRepository db = new DatabaseRepository(product);
+            try
+            {
+                db.Save(product);
+            }
+            catch
+            {
+                
+            }
         }
     }
 
