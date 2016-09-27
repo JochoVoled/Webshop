@@ -133,6 +133,7 @@
     <Content Include="Pages\Clothes.cshtml" />
     <Content Include="Pages\Admin\Adminpage.cshtml" />
     <Content Include="Pages\Register.cshtml" />
+    <Content Include="Pages\AddProduct.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -151,10 +152,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseRepository\tmpDatabaseRepoFile.cs" />
+    <Compile Include="Entities\Cart.cs" />
+    <Compile Include="Entities\Counter.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\Person.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Enums\EGender.cs" />
     <Compile Include="Interfaces\IAdmin.cs" />
     <Compile Include="Interfaces\ICart.cs" />
+    <Compile Include="Interfaces\ICounter.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
     <Compile Include="Interfaces\ILog.cs" />
     <Compile Include="Interfaces\IOrder.cs" />
