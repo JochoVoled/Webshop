@@ -170,6 +170,7 @@
     <Compile Include="Interfaces\IProduct.cs" />
     <Compile Include="Interfaces\IProductCategory.cs" />
     <Compile Include="Interfaces\IProductNumber.cs" />
+    <Compile Include="Logs\Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
