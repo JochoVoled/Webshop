@@ -34,9 +34,8 @@
             //parseSuccess = decimal.TryParse(priceBuy, out priceBuyParsed);
             //parseSuccess = int.TryParse(quantity, out quantityParsed);
 
-            child = (isChild.Trim() != "") ? true : false;
+            child = (String.IsNullOrWhiteSpace(isChild)) ? true : false;
 
-  
             var product = new Product()  //IProduct
             {
                 ProductNumber = productId,
@@ -52,15 +51,15 @@
             };
 
 
-            //todo Spara till fil (XML)
-            DatabaseRepository db = new DatabaseRepository(product);
+            DatabaseRepository<Product> db = new DatabaseRepository<Product>("Products");
+
             try
             {
                 db.Save(product);
             }
             catch
             {
-                
+
             }
         }
     }
