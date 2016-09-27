@@ -133,6 +133,7 @@
     <Content Include="Pages\Clothes.cshtml" />
     <Content Include="Pages\Admin\Adminpage.cshtml" />
     <Content Include="Pages\Register.cshtml" />
+    <Content Include="Pages\AddProduct.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,6 +1,6 @@
 ﻿namespace BestOfBrands.Interfaces
 {
-    interface IPerson
+    public interface IPerson
     {
         string Username { get; set; }
         string Password { get; set; }

@@ -1,5 +1,5 @@
-﻿
-@using BestOfBrands.Entities;
+﻿@using BestOfBrands.Entities; 
+
 <!DOCTYPE html>
 
 <html>
@@ -32,20 +32,11 @@
             //parseSuccess = decimal.TryParse(priceSell, out priceSellParsed);
             //parseSuccess = decimal.TryParse(priceBuy, out priceBuyParsed);
             //parseSuccess = int.TryParse(quantity, out quantityParsed);
-         
-            
-            if (isChild != "" && isChild != " ")
-            {
-                child = true;
-            }
-            else
-            {
-                child = false;
-            }           
-            
+
+            child = (isChild.Trim() != "") ? true : false;
 
 
-            var product = new Product
+            var product = new Product()  //IProduct
             {
                 ProductNumber = productId,
                 Size = size,
