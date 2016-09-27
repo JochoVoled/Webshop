@@ -150,12 +150,14 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseRepository\ProductDatabaseRepository.cs" />
     <Compile Include="DatabaseRepository\tmpDatabaseRepoFile.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Enums\EGender.cs" />
     <Compile Include="Interfaces\IAdmin.cs" />
     <Compile Include="Interfaces\ICart.cs" />
     <Compile Include="Interfaces\ICustomer.cs" />
+    <Compile Include="Interfaces\IDatabaseRepository.cs" />
     <Compile Include="Interfaces\ILog.cs" />
     <Compile Include="Interfaces\IOrder.cs" />
     <Compile Include="Interfaces\IOrderNumber.cs" />
