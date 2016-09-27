@@ -2,7 +2,7 @@
 
 namespace BestOfBrands.Interfaces
 {
-    interface IAdmin
+    public interface IAdmin
     {
         bool EditOrder();
         bool AddProduct();
